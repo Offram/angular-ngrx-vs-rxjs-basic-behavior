@@ -1,0 +1,20 @@
+<div class="name-container">
+  <p>{{ (name$ | async)! }}</p>
+  <button (click)="onAdd(getNewName())" data-test="add-button">New name</button>
+  <button (click)="onAdd(getSameName())" data-test="add-button">
+    Same name
+  </button>
+  <button (click)="onRemoveToString()" data-test="remove-button">
+    Remove name by setting empty string
+  </button>
+  <button (click)="onRemoveToNull()" data-test="remove-button">
+    Remove name by setting null
+  </button>
+</div>
+<div>
+  <button (click)="subscribeOnceToNameSelector()">Subscribe once</button>
+  <button (click)="subscribeOnceWithSkipToNameSelector()">
+    Subscribe once with skip one
+  </button>
+</div>
+<a routerLink="/rxjs-subject">Go to Rxjs Subject</a>
