@@ -1,4 +1,4 @@
-import { Component, DestroyRef, inject } from '@angular/core';
+import { Component, DestroyRef, inject, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { skip, take } from 'rxjs';
 import { GeneralActions } from '../../state/general.actions';
@@ -8,12 +8,12 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 
 @Component({
-  selector: 'app-name-input',
+  selector: 'app-ngrx-input',
   imports: [CommonModule, RouterLink],
-  templateUrl: './name-input.component.html',
-  styleUrl: './name-input.component.scss',
+  templateUrl: './ngrx-input.component.html',
+  styleUrl: './ngrx-input.component.scss',
 })
-export class NameInputComponent {
+export class NgrxInputComponent implements OnInit {
   private store = inject(Store);
   name$ = this.store.select(selectName);
 

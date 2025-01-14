@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { NameInputComponent } from './components/name-input/name-input.component';
+import { NgrxInputComponent } from './components/ngrx-input/ngrx-input.component';
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet],

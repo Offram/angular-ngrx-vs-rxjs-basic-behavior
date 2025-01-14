@@ -1,19 +1,19 @@
 import { Routes } from '@angular/router';
-import { NameInputComponent } from './components/name-input/name-input.component';
+import { NgrxInputComponent } from './components/ngrx-input/ngrx-input.component';
 
 export const routes: Routes = [
   {
     path: 'ngrx-example',
     loadComponent: () =>
-      import('./components/name-input/name-input.component').then(
-        (c) => c.NameInputComponent
+      import('./components/ngrx-input/ngrx-input.component').then(
+        (c) => c.NgrxInputComponent
       ),
   },
   {
     path: 'rxjs-subject',
     loadComponent: () =>
-      import('./components/name-input/name-input.component').then(
-        (c) => c.NameInputComponent
+      import('./components/rxjs-input/rxjs-input.component').then(
+        (c) => c.RxjsInputComponent
       ),
   },
   { path: '', redirectTo: 'ngrx-example', pathMatch: 'full' }, // redirect to `first-component`

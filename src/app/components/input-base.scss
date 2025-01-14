@@ -1,0 +1,7 @@
+.button-group-one-container,
+.button-group-two-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 2rem;
+  margin-bottom: 2rem;
+}

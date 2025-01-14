@@ -1,0 +1,24 @@
+<div class="name-contianer">
+  <h1>Store State</h1>
+  <p>Name: {{ (name$ | async)! }}</p>
+</div>
+
+<div class="button-group-one-container">
+  <button (click)="onAdd(getNewName())" data-test="add-button">New name</button>
+  <button (click)="onAdd(getSameName())" data-test="add-button">
+    Same name
+  </button>
+  <button (click)="onRemoveToString()" data-test="remove-button">
+    Remove name by setting empty string
+  </button>
+  <button (click)="onRemoveToNull()" data-test="remove-button">
+    Remove name by setting null
+  </button>
+</div>
+<div class="button-group-two-container">
+  <button (click)="subscribeOnceToNameSelector()">Subscribe once</button>
+  <button (click)="subscribeOnceWithSkipToNameSelector()">
+    Subscribe once with skip one
+  </button>
+</div>
+<a routerLink="/rxjs-subject">Go to Rxjs Subject</a>
