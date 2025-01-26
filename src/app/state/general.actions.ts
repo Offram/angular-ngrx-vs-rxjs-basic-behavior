@@ -1,10 +1,10 @@
-import { createActionGroup, props } from '@ngrx/store';
+import { createActionGroup, emptyProps, props } from '@ngrx/store';
 
 export const GeneralActions = createActionGroup({
   source: 'Name',
   events: {
     'Add Name': props<{ name: string }>(),
-    'Remove Name String': props<{ name: null }>(),
-    'Remove Name Null': props<{ name: null }>(),
+    'Remove Name String': emptyProps(),
+    'Remove Name Null': emptyProps(),
   },
 });

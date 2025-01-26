@@ -37,11 +37,11 @@ export class NgrxInputComponent implements OnInit {
   }
 
   onRemoveToString() {
-    this.store.dispatch(GeneralActions.removeNameString({ name: null }));
+    this.store.dispatch(GeneralActions.removeNameString());
   }
 
   onRemoveToNull() {
-    this.store.dispatch(GeneralActions.removeNameNull({ name: null }));
+    this.store.dispatch(GeneralActions.removeNameNull());
   }
 
   subscribeOnceToNameSelector(): void {
