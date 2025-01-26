@@ -52,6 +52,9 @@ For end-to-end (e2e) testing, run:
 ng e2e
 ```
 
+## Stackblitz URL
+[angular-ngrx-vs-rxjs-basic-behavior](https://stackblitz.com/~/github.com/Offram/angular-ngrx-vs-rxjs-basic-behavior)
+
 Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
 ## Additional Resources
